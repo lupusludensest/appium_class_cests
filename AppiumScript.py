@@ -5,7 +5,8 @@ desired_capabilities = {
     "platformName": "Android",
     "platformVersion": "9",
     "deviceName": "Android Emulator",
-    "app": "C:\Everything\My_docs\Self_development\IT\Testing\Automation_08_09_2019\AppiumClassTests/app_binaries\org.wikipedia.apk",
+    "app": "C:\Everything\My_docs\Self_development\IT\Testing\Automation_08_09_2019\AppiumClassTest"
+           "\app_binaries\org.wikipedia.apk",
 }
 
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=desired_capabilities)
@@ -21,4 +22,3 @@ e.send_keys('Python')
 text = driver.find_element(By.ID, 'org.wikipedia:id/page_list_item_title').text
 
 assert 'Python' in text, f'Expected Python to be in {text}'
-
