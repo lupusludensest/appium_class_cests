@@ -6,10 +6,10 @@ desired_capabilities = {
     "platformVersion": "9",
     "deviceName": "Android Emulator",
     "app": "C:\Everything\My_docs\Self_development\IT\Testing\Automation_08_09_2019\AppiumClassTest"
-           "\app_binaries\org.wikipedia.apk",
+           "/app_binaries\org.wikipedia.apk",
 }
 
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities=desired_capabilities)
+driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_capabilities=desired_capabilities)
 
 driver.implicitly_wait(5)
 
