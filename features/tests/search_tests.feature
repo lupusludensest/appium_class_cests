@@ -9,5 +9,5 @@ Feature: Tests for Wiki Search
     Then Top result for Python is shown
 
   Scenario: 'No results found' is shown for no results
-    When Enter ahsgfdsgf to search field
+    When Enter abirvalg to search field
     Then 'No results found' message is shown
