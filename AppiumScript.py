@@ -21,3 +21,5 @@ e.send_keys('Python')
 text = driver.find_element(By.ID, 'org.wikipedia:id/page_list_item_title').text
 
 assert 'Python' in text, f'Expected Python to be in {text}'
+
+driver.quit()
