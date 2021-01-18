@@ -53,7 +53,3 @@ Starting web server...
 Server started at <http://192.168.56.1:53498/>. Press <Ctrl+C> to exit
 
 http://192.168.56.1:53498/index.html
-
-##########
-Jenkins
-https://chetanbendre.wordpress.com/2019/03/16/execute-behave-scenarios-on-jenkins/
