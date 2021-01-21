@@ -67,3 +67,6 @@ pip install appium-python-client
 behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features
 allure serve test_results/
 Tune Jenkins/GitHub: https://www.youtube.com/watch?v=Z3S2gMBUkBo&t=336s
+
+##########
+1. Just provoke Jenkins;
