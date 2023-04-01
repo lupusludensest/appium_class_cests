@@ -85,3 +85,11 @@ pip install -r requirements.txt --upgrade
 ##########
 # retrieve the version of Selenium currently installed, from Python
 python -c "import selenium; print(selenium.__version__)"
+
+##########
+Вебхук/ГитХаб побежден. 
+Ход: при генерации урла в утилите ngrok нужно посылать команду  местного урла полностью 
+http 192.168.12.130:8080, а не ngrok http 8080, тогда генерится урл/вебхук принимаемый 
+ГитХабом: https://4d30-2607-fb90-9b95-b3e4-e9cd-c44f-a4ec-7f53.ngrok.io. 
+Добавляем к нему /github-webhook/ и готово: 
+https://4d30-2607-fb90-9b95-b3e4-e9cd-c44f-a4ec-7f53.ngrok.io/github-webhook/
