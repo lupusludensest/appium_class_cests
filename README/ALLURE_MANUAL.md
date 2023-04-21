@@ -99,3 +99,8 @@ adb
 adb start-server
 adb kill-server
 adb devices
+
+##########
+behave --verbose
+
+
