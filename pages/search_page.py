@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-
 from pages.base_page import Page
+from time import sleep
 
 
 class SearchPage(Page):
@@ -13,8 +13,9 @@ class SearchPage(Page):
 
     def verify_search_result(self, search_phrase: str):
         result_text = self.find_element(*self.SEARCH_RESULT).text
-        assert search_phrase in result_text, f'Expected {search_phrase} to be in {result_text}'
+        assert search_phrase in result_text, f'Expected {search_phrase} in {result_text}'
 
     def verify_no_results(self, message: str):
+        sleep(4)
         no_results_text = self.find_element(*self.NO_RESULTS).text
         assert no_results_text == message, f'Expected {message} but got {no_results_text}'

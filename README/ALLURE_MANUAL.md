@@ -93,3 +93,9 @@ http 192.168.12.130:8080, а не ngrok http 8080, тогда генерится
 ГитХабом: https://4d30-2607-fb90-9b95-b3e4-e9cd-c44f-a4ec-7f53.ngrok.io. 
 Добавляем к нему /github-webhook/ и готово: 
 https://4d30-2607-fb90-9b95-b3e4-e9cd-c44f-a4ec-7f53.ngrok.io/github-webhook/
+
+##########
+adb
+adb start-server
+adb kill-server
+adb devices
