@@ -1,5 +1,6 @@
 from appium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 desired_capabilities = {
     "platformName": "Android",
@@ -16,7 +17,7 @@ driver.find_element(By.ID, 'org.wikipedia:id/search_container').click()
 e = driver.find_element(By.ID, 'org.wikipedia:id/search_src_text')
 e.clear()
 expected_text = 'Python'
-e.send_keys(expected_text)
+e.send_keys(expected_text, Keys.ENTER)
 actual_text = driver.find_element(By.ID, 'org.wikipedia:id/page_list_item_title').text
 assert expected_text in actual_text, f'Expected "{expected_text}" to be in {actual_text}'
 
@@ -27,7 +28,7 @@ e = driver.find_element(By.ID, 'org.wikipedia:id/search_src_text')
 e.clear()
 expected_text = 'No results found'
 sent_text = 'abirvalg_abirvalg!@#'
-e.send_keys(sent_text)
+e.send_keys(sent_text, Keys.ENTER)
 actual_text = driver.find_element(By.ID, 'org.wikipedia:id/search_empty_text').text
 assert expected_text in actual_text, f'Expected "{expected_text}" to be in {actual_text}'
 driver.quit()
